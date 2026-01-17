@@ -1,7 +1,7 @@
 # Módulo: gestion_charlas.py
 # Propósito: Lógica de negocio, validación de cupos y validación recursiva.
 
-import manejo_archivos
+import Manejo_Archivos
 
 # Diccionario de datos: Charlas y sus cupos iniciales
 charlas = {
@@ -66,4 +66,5 @@ def inscribir_participante():
 
 def ver_consultas():
     print("\n--- Historial de Inscritos ---")
-    print(manejo_archivos.leer_registros())
+
+    print(Manejo_Archivos.leer_registros())
