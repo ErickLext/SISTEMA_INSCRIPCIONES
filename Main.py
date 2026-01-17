@@ -2,7 +2,7 @@
 # Estudiante: [Tu Nombre]
 # Propósito: Interfaz de usuario y control principal del sistema.
 
-import gestion_charlas
+import Gestion_Charlas
 
 def ejecutar_sistema():
     """Criterio: Implementación del menú interactivo."""
@@ -18,9 +18,9 @@ def ejecutar_sistema():
             opcion = input("\nSeleccione una opción (1-3): ")
             
             if opcion == "1":
-                gestion_charlas.inscribir_participante()
+                Gestion_Charlas.inscribir_participante()
             elif opcion == "2":
-                gestion_charlas.ver_consultas()
+                Gestion_Charlas.ver_consultas()
             elif opcion == "3":
                 print("Gracias por usar el sistema. Cerrando sesión...")
                 break
@@ -32,4 +32,5 @@ def ejecutar_sistema():
             print(f"Ha ocurrido un error inesperado en el sistema: {e}")
 
 if __name__ == "__main__":
+
     ejecutar_sistema()
